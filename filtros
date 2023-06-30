@@ -1,0 +1,3 @@
+/routing/filter/rule
+add chain=bgp_out rule="if (dst in 45.233.231.0/24) {accept}"
+add chain=bgp_out rule="set bgp-local-pref -1; set bgp-igp-metric ospf-ext-metric; accept"
